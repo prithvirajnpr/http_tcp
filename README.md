@@ -39,12 +39,6 @@ python proxy_server.py target_host target_port
 python proxy_server.py target_host target_port proxy_host proxy_port
 ```
 
-## Readme.md
-
-You can create a `readme.md` file to provide documentation for your script. Here's a basic template:
-
----
-
 # HTTP Proxy Server with Image Caching
 
 This Python script implements an HTTP proxy server that intercepts and caches images requested by clients. It also allows you to save the entire HTML response to a file.
