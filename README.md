@@ -2,6 +2,21 @@
 
 This Python script implements an HTTP proxy server that can intercept and cache images requested by clients. It also includes the ability to save the entire HTML response to a file.
 
+## Prerequisites
+
+- Python 3.x
+- Required Python libraries (can be installed via `pip`):
+  - `socket`
+  - `bs4` (BeautifulSoup)
+
+## Features
+
+- Acts as an HTTP proxy server for clients.
+- Caches image responses for future requests.
+- Allows you to specify a target web server and port.
+- Supports the use of a proxy server for requests.
+- Multithreaded to serve multiple clients simultaneously.
+
 ## How the Proxy Works
 
 The script does the following:
@@ -38,43 +53,6 @@ python proxy_server.py target_host target_port
 ```bash
 python proxy_server.py target_host target_port proxy_host proxy_port
 ```
-
-# HTTP Proxy Server with Image Caching
-
-This Python script implements an HTTP proxy server that intercepts and caches images requested by clients. It also allows you to save the entire HTML response to a file.
-
-## Features
-
-- Acts as an HTTP proxy server for clients.
-- Caches image responses for future requests.
-- Allows you to specify a target web server and port.
-- Supports the use of a proxy server for requests.
-- Multithreaded to serve multiple clients simultaneously.
-
-## Prerequisites
-
-- Python 3.x
-- Required Python libraries (can be installed via `pip`):
-  - `socket`
-  - `bs4` (BeautifulSoup)
-  
-## Usage
-
-1. Run the script from the command line with the following arguments:
-
-   Without a proxy server:
-
-   ```bash
-   python proxy_server.py target_host target_port
-   ```
-
-   With a proxy server:
-
-   ```bash
-   python proxy_server.py target_host target_port proxy_host proxy_port
-   ```
-
-2. The proxy server will start listening for incoming connections.
 
 ## Configuration
 
