@@ -1,7 +1,5 @@
 # Http_tcp
 
-# HTTP Proxy Server with Image Caching
-
 This Python script implements an HTTP proxy server that can intercept and cache images requested by clients. It also includes the ability to save the entire HTML response to a file.
 
 ## How the Proxy Works
