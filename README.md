@@ -1,6 +1,6 @@
 # Http_tcp
 
-This Python script implements an HTTP proxy server that can intercept and cache images requested by clients. It also includes the ability to save the entire HTML response to a file.
+This Python script implements an HTTP proxy server that can intercept the requests by clients. It also includes the ability to save the entire HTML response to a file.
 
 ## Prerequisites
 
@@ -8,11 +8,11 @@ This Python script implements an HTTP proxy server that can intercept and cache 
 - Required Python libraries (can be installed via `pip`):
   - `socket`
   - `bs4` (BeautifulSoup)
+  - `threading`
 
 ## Features
 
 - Acts as an HTTP proxy server for clients.
-- Caches image responses for future requests.
 - Allows you to specify a target web server and port.
 - Supports the use of a proxy server for requests.
 - Multithreaded to serve multiple clients simultaneously.
@@ -31,13 +31,13 @@ Here are some example usages:
 ### Without a Proxy Server
 
 ```bash
-python proxy_server.py target_host target_port
+$python3 proxy_server.py target_host target_port
 ```
 
 ### With a Proxy Server
 
 ```bash
-python proxy_server.py target_host target_port proxy_host proxy_port
+$python3 proxy_server.py target_host target_port proxy_host proxy_port
 ```
 
 ## How the Proxy Works
