@@ -94,10 +94,6 @@ If you'd like to contribute to this project, please open an issue or submit a pu
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Thanks to [OpenAI](https://openai.com) for providing the GPT-3.5 model.
-
 ---
 
 Feel free to customize and expand the readme as needed for your project.
