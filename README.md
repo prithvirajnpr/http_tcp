@@ -1,6 +1,4 @@
-# http_tcp
-
-# HTTP Proxy
+# Http_tcp
 
 This Python script is designed to perform several tasks, including making HTTP requests to a target web server either directly or through a proxy server, saving the response to a file, and downloading images from the target server. It uses the `socket` library for network communication and `BeautifulSoup` for HTML parsing.
 
