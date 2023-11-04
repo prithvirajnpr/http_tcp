@@ -16,12 +16,12 @@ To run the script, use the following command-line arguments:
 
 - For direct HTTP requests:
   ```bash
-  python script.py <target_host> <target_port>
+  python client.py <target_host> <target_port>
   ```
 
 - For HTTP requests through a proxy:
   ```bash
-  python script.py <target_host> <target_port> <proxy_host> <proxy_port>
+  python client.py <target_host> <target_port> <proxy_host> <proxy_port>
   ```
 
 ## How the Script Works
