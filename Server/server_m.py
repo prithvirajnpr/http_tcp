@@ -48,17 +48,17 @@ def readfile(file_path):
     return response
         
 
-def connection(server,t,k):
+def connection(server,li,cn):
     while True:
         # Accept a connection from a client
         client_socket, client_address = server.accept()
         print(f"Accepted connection from {client_address}")
-        k=k+1
-        t.append(threading.Thread(target=fun,args=(client_socket, client_address,server)))
-        t[k-1].start()
+        cn=cn+1
+        li.append(threading.Thread(target=fun,args=(client_socket, client_address,server)))
+        li[cn-1].start()
         
-    for i in range(0,k):
-        t[i].join()
+    for i in range(0,cn):
+        li[i].join()
     server.close()
 
 serverip = "127.0.0.1"  
@@ -71,10 +71,11 @@ def main():
     # Listen for incoming connections
     server.listen(5)
     print(f"Server listening on {serverip}:{serverport}")
-    t=[]
-    k=0
-    connection(server,t,k)
+    lst=[]
+    cnt=0
+    connection(server,lst,cnt)
     
 
 if __name__ == '__main__':
-    main()
+    main()
+
