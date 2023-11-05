@@ -11,7 +11,6 @@ def sysargs():
     try:
 
         if len(sys.argv)>=5:
-
             
             serverhost = sys.argv[1]
             serverport = sys.argv[2]
